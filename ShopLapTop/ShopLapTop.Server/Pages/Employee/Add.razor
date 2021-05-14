@@ -1,0 +1,70 @@
+﻿@page "/Employee/Add"
+@attribute [Authorize]
+<h3>Add New Employee</h3>
+<RadzenCard>
+    <div class="row">
+        <div class="col-6">
+            <div class="radzen-row">
+                <RadzenLabel class="radzen-lable" Text="Ten Nhan Vien" />
+                <RadzenTextBox Placeholder="Ten Nhan Vien" class="radzen-textbox" />
+            </div>
+            <div class="radzen-row">
+                <RadzenLabel class="radzen-lable" Text="Email" />
+                <RadzenTextBox Placeholder="Email" class="radzen-textbox" />
+            </div>
+            <div class="radzen-row">
+                <RadzenLabel class="radzen-lable" Text="Mat Khau" />
+                <RadzenPassword class="radzen-textbox" />
+            </div>
+            <div class="radzen-row">
+                <RadzenLabel class="radzen-lable" Text="Quyen" />
+                <RadzenTextBox Placeholder="Quyen" class="radzen-textbox" />
+            </div>
+        </div>
+        <div class="col-6">
+            <div class="radzen-row">
+                <RadzenLabel class="radzen-lable" Text="SDT" />
+                <RadzenTextBox Placeholder="SDT" class="radzen-textbox" />
+            </div>
+            <div class="radzen-row">
+                <RadzenLabel class="radzen-lable" Text="Dia Chi" />
+                <RadzenTextArea class="radzen-textarea" />
+            </div>
+            <div class="radzen-row">
+                <RadzenLabel class="radzen-lable" Text="Chuc Vu" />
+                <RadzenTextBox Placeholder="Chuc Vu" class="radzen-textbox" />
+            </div>
+        </div>
+    </div>
+    <div class="row justify-content-center">
+        <div class="col-md-12 d-flex align-items-end justify-content-center" style="margin-top: 16px;">
+            <RadzenButton ButtonType="Radzen.ButtonType.Button" ButtonStyle="Radzen.ButtonStyle.Success" class="radzen-button" Icon="save" Text="Save" />
+            <RadzenButton ButtonType="Radzen.ButtonType.Button" ButtonStyle="Radzen.ButtonStyle.Danger" class="radzen-button" Icon="delete" Text="Delete" />
+        </div>
+    </div>
+</RadzenCard>
+
+<RadzenGrid AllowFiltering="true" AllowPaging="true" PageSize="4" AllowSorting="true" Data="@employees" TItem="Employee" ColumnWidth="200px" AllowColumnResize="true">
+    <Columns>
+        <RadzenGridColumn TItem="Employee" Property="TenSP" Title="Ten Nhan Vien" />
+        <RadzenGridColumn TItem="Employee" Property="LoaiSP" Title="Email" />
+        <RadzenGridColumn TItem="Employee" Property="DonGia" Title="SDT" />
+        <RadzenGridColumn TItem="Employee" Property="DonGia" Title="Chuc Vu" />
+    </Columns>
+</RadzenGrid>
+@code {
+    int Amount;
+    DateTime Date = new DateTime();
+    IEnumerable<Employee> employees;
+    protected override void OnInitialized()
+    {
+        Date = DateTime.Now;
+        base.OnInitialized();
+    }
+    public class Employee
+    {
+        public string TenSP { get; set; }
+        public string LoaiSP { get; set; }
+        public int DonGia { get; set; }
+    }
+}
