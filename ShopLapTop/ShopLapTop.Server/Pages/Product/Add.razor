@@ -1,0 +1,90 @@
+﻿@page "/Product/Add"
+<h3>Add New Product</h3>
+<RadzenCard>
+    <div class="row">
+        <div class="col-6">
+            <div class="radzen-row">
+                <RadzenLabel class="radzen-lable" Text="Ten San Pham" />
+                <RadzenTextBox Placeholder="Ten San Pham" class="radzen-textbox" />
+            </div>
+            <div class="radzen-row">
+                <RadzenLabel class="radzen-lable" Text="Loai San Pham" />
+                <RadzenTextBox Placeholder="Loai San Pham" class="radzen-textbox" />
+            </div>
+            <div class="radzen-row">
+                <RadzenLabel class="radzen-lable" Text="Chi Tiet San Pham" />
+                <RadzenTextArea class="radzen-textarea" Style="height:110px" />
+            </div>
+            <div class="radzen-row">
+                <RadzenLabel class="radzen-lable" Text="Mo Ta San Pham" />
+                <RadzenTextArea class="radzen-textarea" Style="height:110px" />
+            </div>
+        </div>
+        <div class="col-6">
+            <div class="radzen-row">
+                <RadzenLabel class="radzen-lable" Text="Nha Cung Cap" />
+                <RadzenTextBox Placeholder="Nha Cung Cap" class="radzen-textbox" />
+            </div>
+            <div class="radzen-row">
+                <RadzenLabel class="radzen-lable" Text="Khuyen Mai" />
+                <RadzenTextBox Placeholder="Khuyen Mai" class="radzen-textbox" />
+            </div>
+
+            <div class="radzen-row">
+                <RadzenLabel class="radzen-lable" Text="Thuong Hieu" />
+                <RadzenTextBox Placeholder="Thuong Hieu" class="radzen-textbox" />
+            </div>
+
+            <div class="radzen-row">
+                <RadzenLabel class="radzen-lable" Text="Don Gia" />
+                <RadzenTextBox class="radzen-textbox" />
+            </div>
+            <div class="radzen-row">
+                <RadzenLabel class="radzen-lable" Text="So Luong" />
+                <RadzenNumeric @bind-Value="Amount" />
+            </div>
+            <div class="radzen-row">
+                <RadzenLabel class="radzen-lable" Text="Ngay Tao" />
+                <RadzenDatePicker @bind-Value="@Date" DateFormat="d" />
+            </div>
+            <div class="radzen-row">
+                <RadzenLabel class="radzen-lable" Text="Ngay Sua" />
+                <RadzenDatePicker @bind-Value="@Date" DateFormat="d" />
+            </div>
+            <div class="radzen-row">
+                <RadzenUpload Auto="false" Multiple="true" Url="upload/multiple" Style="margin-bottom: 20px;" ChooseText="Hinh Anh" />
+            </div>
+        </div>
+    </div>
+    <div class="row justify-content-center">
+        <div class="col-md-12 d-flex align-items-end justify-content-center" style="margin-top: 16px;">
+            <RadzenButton ButtonType="Radzen.ButtonType.Button" ButtonStyle="Radzen.ButtonStyle.Success" class="radzen-button" Icon="save" Text="Save" />
+            <RadzenButton ButtonType="Radzen.ButtonType.Button" ButtonStyle="Radzen.ButtonStyle.Danger" class="radzen-button" Icon="delete" Text="Delete" />
+        </div>
+    </div>
+</RadzenCard>
+
+<RadzenGrid AllowFiltering="true" AllowPaging="true" PageSize="4" AllowSorting="true" Data="@employees" TItem="Employee" ColumnWidth="200px" AllowColumnResize="true">
+    <Columns>
+        <RadzenGridColumn TItem="Employee" Property="TenSP" Title="Ten San Pham" />
+        <RadzenGridColumn TItem="Employee" Property="LoaiSP" Title="Loai San Pham" />
+        <RadzenGridColumn TItem="Employee" Property="DonGia" Title="Don Gia" />
+        <RadzenGridColumn TItem="Employee" Property="DonGia" Title="Thuong Hieu" />
+    </Columns>
+</RadzenGrid>
+@code {
+    int Amount;
+    DateTime Date = new DateTime();
+    IEnumerable<Employee> employees;
+    protected override void OnInitialized()
+    {
+        Date = DateTime.Now;
+        base.OnInitialized();
+    }
+    public class Employee
+    {
+        public string TenSP { get; set; }
+        public string LoaiSP { get; set; }
+        public int DonGia { get; set; }
+    }
+}

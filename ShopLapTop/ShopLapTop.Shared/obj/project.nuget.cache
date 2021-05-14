@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "+/L1pNZHCmQ/XvqZgW7bWTYmdLynXykKm0S4euA6HsEuo2GeW+A7532MKAd1Z+sagfNJVT7c2nHPyRCg3fEyBA==",
+  "success": true,
+  "projectFilePath": "D:\\DoAn\\ShopLaptop\\ShopLapTop\\ShopLapTop.Shared\\ShopLapTop.Shared.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Kou\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\Kou\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
