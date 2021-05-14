@@ -2598,25 +2598,20 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Kou\\.nuget\\packages\\": {},
-    "C:\\Microsoft\\Xamarin\\NuGet\\": {}
+    "C:\\Users\\ACER\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\DoAn\\ShopLaptop\\ShopLapTop\\ShopLapTop.Server\\ShopLapTop.Server.csproj",
+      "projectUniqueName": "E:\\Github\\ShopLaptop\\ShopLapTop\\ShopLapTop.Server\\ShopLapTop.Server.csproj",
       "projectName": "ShopLapTop.Server",
-      "projectPath": "D:\\DoAn\\ShopLaptop\\ShopLapTop\\ShopLapTop.Server\\ShopLapTop.Server.csproj",
-      "packagesPath": "C:\\Users\\Kou\\.nuget\\packages\\",
-      "outputPath": "D:\\DoAn\\ShopLaptop\\ShopLapTop\\ShopLapTop.Server\\obj\\",
+      "projectPath": "E:\\Github\\ShopLaptop\\ShopLapTop\\ShopLapTop.Server\\ShopLapTop.Server.csproj",
+      "packagesPath": "C:\\Users\\ACER\\.nuget\\packages\\",
+      "outputPath": "E:\\Github\\ShopLaptop\\ShopLapTop\\ShopLapTop.Server\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Microsoft\\Xamarin\\NuGet\\"
-      ],
       "configFilePaths": [
-        "C:\\Users\\Kou\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        "C:\\Users\\ACER\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netstandard2.1"
@@ -2627,6 +2622,7 @@
       },
       "frameworks": {
         "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
           "projectReferences": {}
         }
       },
@@ -2638,6 +2634,7 @@
     },
     "frameworks": {
       "netstandard2.1": {
+        "targetAlias": "netstandard2.1",
         "dependencies": {
           "Blazored.LocalStorage": {
             "target": "Package",
@@ -2685,7 +2682,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.203\\RuntimeIdentifierGraph.json"
       }
     }
   }
