@@ -26,7 +26,6 @@ E:\Github\ShopLaptop\ShopLapTop\ShopLaptop.Client\obj\Debug\netcoreapp3.1\Razor\
 E:\Github\ShopLaptop\ShopLapTop\ShopLaptop.Client\obj\Debug\netcoreapp3.1\Razor\Views\Home\Detail.cshtml.g.cs
 E:\Github\ShopLaptop\ShopLapTop\ShopLaptop.Client\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
 E:\Github\ShopLaptop\ShopLapTop\ShopLaptop.Client\obj\Debug\netcoreapp3.1\Razor\Views\Home\Login.cshtml.g.cs
-E:\Github\ShopLaptop\ShopLapTop\ShopLaptop.Client\obj\Debug\netcoreapp3.1\Razor\Views\Home\Privacy.cshtml.g.cs
 E:\Github\ShopLaptop\ShopLapTop\ShopLaptop.Client\obj\Debug\netcoreapp3.1\Razor\Views\Home\Signup.cshtml.g.cs
 E:\Github\ShopLaptop\ShopLapTop\ShopLaptop.Client\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Error.cshtml.g.cs
 E:\Github\ShopLaptop\ShopLapTop\ShopLaptop.Client\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
@@ -41,3 +40,4 @@ E:\Github\ShopLaptop\ShopLapTop\ShopLaptop.Client\obj\Debug\netcoreapp3.1\ShopLa
 E:\Github\ShopLaptop\ShopLapTop\ShopLaptop.Client\obj\Debug\netcoreapp3.1\ShopLaptop.Client.pdb
 E:\Github\ShopLaptop\ShopLapTop\ShopLaptop.Client\obj\Debug\netcoreapp3.1\ShopLaptop.Client.genruntimeconfig.cache
 E:\Github\ShopLaptop\ShopLapTop\ShopLaptop.Client\obj\Debug\netcoreapp3.1\ShopLaptop.Client.csproj.CopyComplete
+E:\Github\ShopLaptop\ShopLapTop\ShopLaptop.Client\obj\Debug\netcoreapp3.1\Razor\Views\Home\Contact.cshtml.g.cs
