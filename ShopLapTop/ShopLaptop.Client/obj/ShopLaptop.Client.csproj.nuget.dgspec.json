@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Github\\ShopLaptop\\ShopLapTop\\ShopLaptop.Client\\ShopLaptop.Client.csproj": {}
+    "E:\\Github\\ShopLaptop\\ShopLapTop\\ShopLapTop.Client\\ShopLapTop.Client.csproj": {}
   },
   "projects": {
-    "E:\\Github\\ShopLaptop\\ShopLapTop\\ShopLaptop.Client\\ShopLaptop.Client.csproj": {
+    "E:\\Github\\ShopLaptop\\ShopLapTop\\ShopLapTop.Client\\ShopLapTop.Client.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Github\\ShopLaptop\\ShopLapTop\\ShopLaptop.Client\\ShopLaptop.Client.csproj",
-        "projectName": "ShopLaptop.Client",
-        "projectPath": "E:\\Github\\ShopLaptop\\ShopLapTop\\ShopLaptop.Client\\ShopLaptop.Client.csproj",
+        "projectUniqueName": "E:\\Github\\ShopLaptop\\ShopLapTop\\ShopLapTop.Client\\ShopLapTop.Client.csproj",
+        "projectName": "ShopLapTop.Client",
+        "projectPath": "E:\\Github\\ShopLaptop\\ShopLapTop\\ShopLapTop.Client\\ShopLapTop.Client.csproj",
         "packagesPath": "C:\\Users\\ACER\\.nuget\\packages\\",
-        "outputPath": "E:\\Github\\ShopLaptop\\ShopLapTop\\ShopLaptop.Client\\obj\\",
+        "outputPath": "E:\\Github\\ShopLaptop\\ShopLapTop\\ShopLapTop.Client\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ACER\\AppData\\Roaming\\NuGet\\NuGet.Config",

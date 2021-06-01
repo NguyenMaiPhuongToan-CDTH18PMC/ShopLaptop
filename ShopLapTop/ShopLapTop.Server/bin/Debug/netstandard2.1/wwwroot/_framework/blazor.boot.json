@@ -6,7 +6,7 @@
   "linkerEnabled": false,
   "resources": {
     "assembly": {
-      "ShopLapTop.Server.dll": "sha256-qwTGVnS0PM3c\/Vm4fFkSPJ9tT46uYlGJ5KIU82wjiuQ=",
+      "ShopLapTop.Server.dll": "sha256-krdqAkuUr+I5tQNYbG8CFNXMzHBzlUh7wlJrnhlvjcY=",
       "Microsoft.Extensions.Options.dll": "sha256-pGAQaCi8\/wTDMRCFAN3oKMNRerTdP05OrTQPbx5RyHM=",
       "Microsoft.Extensions.Primitives.dll": "sha256-RVzm1vjXFnghf8As6aNleIV\/31+FHaisWefhyu0vAmA=",
       "System.Runtime.CompilerServices.Unsafe.dll": "sha256-kL\/omZDwqByAi+lPdMeDmr3XjHcn4RVb+LmZ4mut1Yc=",
@@ -69,7 +69,7 @@
       "Microsoft.AspNetCore.Components.Authorization.dll": "sha256-1MpK+R+B22ze2\/fn7l7hfyjClvOQ8bD7zIqXJYJtnXY="
     },
     "pdb": {
-      "ShopLapTop.Server.pdb": "sha256-G+5JLrJFrB\/KNQgjqrPO6ynJL74KMKBX3NWa+4uIjI0=",
+      "ShopLapTop.Server.pdb": "sha256-jUQcxIDyRzwNAgGWLApfBkgiAsbpWwLW3g0uqvsnWi0=",
       "System.Linq.Dynamic.Core.pdb": "sha256-zOBZ+bv44N0h0EaRYZhGqngeYcBonLjpA36C+TrA\/lA="
     },
     "runtime": {
