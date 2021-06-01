@@ -840,3 +840,4 @@ E:\Github\ShopLaptop\ShopLapTop\ShopLapTop.Server\obj\Debug\netstandard2.1\ShopL
 E:\Github\ShopLaptop\ShopLapTop\ShopLapTop.Server\obj\Debug\netstandard2.1\ShopLapTop.Server.csproj.CopyComplete
 E:\Github\ShopLaptop\ShopLapTop\ShopLapTop.Server\obj\Debug\netstandard2.1\ShopLapTop.Server.dll
 E:\Github\ShopLaptop\ShopLapTop\ShopLapTop.Server\obj\Debug\netstandard2.1\ShopLapTop.Server.pdb
+E:\Github\ShopLaptop\ShopLapTop\ShopLapTop.Server\obj\Debug\netstandard2.1\ShopLapTop.Server.csprojAssemblyReference.cache
