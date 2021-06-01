@@ -148,24 +148,25 @@ h2 {
   margin: 0;
   padding: 0;
   font-weight: bold;
-  color: #222;
+
   font-family: Poppins;
   font-size: 36px; }
 
 .main {
-  background: #f8f8f8;
-  padding: 150px 0; }
+    
+}
 
 .clear {
   clear: both; }
 
 body {
-  font-size: 13px;
-  line-height: 1.8;
-  color: #222;
-  background: #f8f8f8;
-  font-weight: 400;
-  font-family: Poppins; }
+    font-size: 16px;
+    line-height: 1.8;
+    color: white;
+    background-image: url( https://storage.googleapis.com/teko-gae.appspot.com/media/image/2021/5/26/20210526_1428b21d-cd82-4cd4-b16d-52aba766d8de.png);
+    font-weight: 400;
+    font-family: Poppins;
+}
 
 .container 1{
   width: 900px;
@@ -240,6 +241,7 @@ figure {
   text-align: center; }
 
 .form-submit {
+    font-size:16px;
   display: inline-block;
   background: #6dabe4;
   color: #fff;
@@ -260,14 +262,14 @@ figure {
   margin-top: 16px; }
 
 .signup-image-link {
-  font-size: 14px;
-  color: #222;
+  font-size: 20px;
+  color: lightblue;
   display: block;
   text-align: center; }
 
 .term-service {
   font-size: 13px;
-  color: #222; }
+  color: lightblue; }
 
 .signup-form {
   margin-left: 75px;
@@ -290,7 +292,8 @@ input {
   border: none;
   border-bottom: 1px solid #999;
   padding: 6px 30px;
-  font-family: Poppins;
+  font-family: sans-serif;
+  font-size:16px;
   box-sizing: border-box; }
   input::-webkit-input-placeholder {
     color: #999; }
@@ -373,7 +376,7 @@ label {
   -webkit-transform: translateY(-50%);
   -o-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
-  color: #222; }
+ }
 
 .label-has-error {
   top: 22%; }

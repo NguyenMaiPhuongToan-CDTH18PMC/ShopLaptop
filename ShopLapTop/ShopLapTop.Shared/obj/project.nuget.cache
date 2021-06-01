@@ -1,14 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "R6b5Ch/Gkr6CJWvEn6FzMXmef4GRds+Z45Wh+5q49uAbNqVUsRaRYpQKz8mS7ECaddC9oJV57VO2wzRLXxwnbw==",
+  "dgSpecHash": "w1DSq8DLPxHv0cfweoJL/z4x8NjYkYx7VI9ne5KmDbbR4k7qu/zhYXpetp8qJCCRIdUqx5pyxjJgpTW1HTrJiA==",
   "success": true,
-  "projectFilePath": "D:\\DoAn\\ShopLaptop\\ShopLapTop\\ShopLapTop.Shared\\ShopLapTop.Shared.csproj",
+  "projectFilePath": "E:\\Github\\ShopLaptop\\ShopLapTop\\ShopLapTop.Shared\\ShopLapTop.Shared.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Kou\\.nuget\\packages\\aksoftware.webapi\\3.0.1\\aksoftware.webapi.3.0.1.nupkg.sha512",
-    "C:\\Users\\Kou\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
-    "C:\\Users\\Kou\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
-    "C:\\Microsoft\\Xamarin\\NuGet\\newtonsoft.json\\11.0.2\\newtonsoft.json.11.0.2.nupkg.sha512",
-    "C:\\Users\\Kou\\.nuget\\packages\\system.componentmodel.annotations\\5.0.0\\system.componentmodel.annotations.5.0.0.nupkg.sha512"
+    "C:\\Users\\ACER\\.nuget\\packages\\aksoftware.webapi\\3.0.1\\aksoftware.webapi.3.0.1.nupkg.sha512",
+    "C:\\Users\\ACER\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\ACER\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
+    "C:\\Users\\ACER\\.nuget\\packages\\newtonsoft.json\\11.0.2\\newtonsoft.json.11.0.2.nupkg.sha512",
+    "C:\\Users\\ACER\\.nuget\\packages\\system.componentmodel.annotations\\5.0.0\\system.componentmodel.annotations.5.0.0.nupkg.sha512"
   ],
   "logs": []
 }
