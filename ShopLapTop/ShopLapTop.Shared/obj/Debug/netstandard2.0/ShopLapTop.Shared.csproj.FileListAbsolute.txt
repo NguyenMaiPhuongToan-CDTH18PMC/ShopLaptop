@@ -1,0 +1,9 @@
+E:\Github\ShopLaptop\ShopLapTop\ShopLapTop.Shared\bin\Debug\netstandard2.0\ShopLapTop.Shared.deps.json
+E:\Github\ShopLaptop\ShopLapTop\ShopLapTop.Shared\bin\Debug\netstandard2.0\ShopLapTop.Shared.dll
+E:\Github\ShopLaptop\ShopLapTop\ShopLapTop.Shared\bin\Debug\netstandard2.0\ShopLapTop.Shared.pdb
+E:\Github\ShopLaptop\ShopLapTop\ShopLapTop.Shared\obj\Debug\netstandard2.0\ShopLapTop.Shared.csprojAssemblyReference.cache
+E:\Github\ShopLaptop\ShopLapTop\ShopLapTop.Shared\obj\Debug\netstandard2.0\ShopLapTop.Shared.AssemblyInfoInputs.cache
+E:\Github\ShopLaptop\ShopLapTop\ShopLapTop.Shared\obj\Debug\netstandard2.0\ShopLapTop.Shared.AssemblyInfo.cs
+E:\Github\ShopLaptop\ShopLapTop\ShopLapTop.Shared\obj\Debug\netstandard2.0\ShopLapTop.Shared.csproj.CoreCompileInputs.cache
+E:\Github\ShopLaptop\ShopLapTop\ShopLapTop.Shared\obj\Debug\netstandard2.0\ShopLapTop.Shared.dll
+E:\Github\ShopLaptop\ShopLapTop\ShopLapTop.Shared\obj\Debug\netstandard2.0\ShopLapTop.Shared.pdb
