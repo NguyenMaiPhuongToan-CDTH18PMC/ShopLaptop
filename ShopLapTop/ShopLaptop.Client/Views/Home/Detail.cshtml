@@ -22,13 +22,19 @@
                     <li><a asp-area="" asp-controller="Home" asp-action="Checkout">Thanh toán</a></li>
                     <li><a asp-area="" asp-controller="Home" asp-action="Login">Đăng nhập</a></li>
                     <li><a asp-area="" asp-controller="Home" asp-action="Contact">Liên hệ</a></li>
+                    <li>
+                        <input type="text" name="search" style="padding:20px" placeholder="Tỉm sản phẩm..." />
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-search"></i></a>
+                    </li>
                 </ul>
             </div>
         </div>
     </div>
 </div> <!-- End mainmenu area -->
 
-<div class="product-big-title-area">
+@*<div class="product-big-title-area">
     <div class="container">
         <div class="row">
             <div class="col-md-12">
@@ -38,7 +44,7 @@
             </div>
         </div>
     </div>
-</div>
+</div>*@
 
 
 <div class="single-product-area">
@@ -115,8 +121,8 @@
 
                                 <div class="product-gallery">
                                     <img src="~/img/product-thumb-1.jpg" alt="">
-                                    <img src="~/img/product-thumb-2-2.jpg" alt="">
-                                    <img src="~/img/product-thumb-2-3.jpg" alt="">
+                                    <img src="~/img/product-thumb-2.jpg" alt="">
+                                    <img src="~/img/product-thumb-3.jpg" alt="">
                                 </div>
                             </div>
                         </div>
@@ -130,9 +136,9 @@
 
                                 <form action="" class="cart">
                                     <div class="quantity">
-                                        <input type="number" size="4" class="input-text qty text" title="Qty" value="1" name="quantity" min="1" step="1">
+                                        <input type="text" size="4" class="input-text qty text" title="Qty" value="1" name="quantity" >
                                     </div>
-                                    <button class="add_to_cart_button" type="submit">Thêm vào giỏ hàng</button>
+                                    <button class="add_to_cart_button" type="submit"><i class="fa fa-shopping-cart"></i></button>
                                 </form>
 
                                 <div class="product-inner-category">
@@ -142,14 +148,14 @@
                                 <div role="tabpanel">
                                     <ul class="product-tab" role="tablist">
                                         <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Thông tin</a></li>
-                                        <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Đánh giá</a></li>
+                                        @*<li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Đánh giá</a></li>*@
                                     </ul>
                                     <div class="tab-content">
                                         <div role="tabpanel" class="tab-pane fade in active" id="home">
                                             <h2>Thông tin sản phẩm</h2>
                                             <p>.....</p>
                                         </div>
-                                        <div role="tabpanel" class="tab-pane fade" id="profile">
+                                        @*<div role="tabpanel" class="tab-pane fade" id="profile">
                                             <h2>Đánh giá</h2>
                                             <div class="submit-review">
                                                 <p><label for="name">Tên</label> <input name="name" type="text"></p>
@@ -168,7 +174,7 @@
                                                 <p><label for="review">Bình luận</label> <textarea name="review" id="" cols="30" rows="10"></textarea></p>
                                                 <p><input type="submit" value="Gửi"></p>
                                             </div>
-                                        </div>
+                                        </div>*@
                                     </div>
                                 </div>
 

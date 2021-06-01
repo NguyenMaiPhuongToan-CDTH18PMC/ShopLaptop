@@ -52,6 +52,7 @@
  *  Core Owl Carousel CSS File
  */
 .owl-carousel {
+background-color:whitesmoke;
   display: none;
   width: 100%;
   -webkit-tap-highlight-color: transparent;
@@ -115,6 +116,7 @@
 }
 .owl-carousel .owl-item img {
   display: block;
+  background-color:white;
   width: 100%;
   -webkit-transform-style: preserve-3d;
 }
