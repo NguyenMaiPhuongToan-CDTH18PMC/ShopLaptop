@@ -242,3 +242,4 @@ E:\Github\ShopLaptop\ShopLapTop\Client\obj\Debug\net5.0\Client.dll
 E:\Github\ShopLaptop\ShopLapTop\Client\obj\Debug\net5.0\ref\Client.dll
 E:\Github\ShopLaptop\ShopLapTop\Client\obj\Debug\net5.0\Client.pdb
 E:\Github\ShopLaptop\ShopLapTop\Client\obj\Debug\net5.0\Client.genruntimeconfig.cache
+D:\DoAn\ShopLaptop\ShopLapTop\Client\obj\Debug\net5.0\Client.pdb

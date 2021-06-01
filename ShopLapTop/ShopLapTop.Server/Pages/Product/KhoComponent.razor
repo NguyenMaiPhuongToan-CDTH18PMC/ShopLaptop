@@ -1,0 +1,84 @@
+﻿@page "/Product/Kho"
+@inject ProductService productService
+@inject NavigationManager navigationManager
+@inject NotificationService notificationService
+
+<h3>Them Kho</h3>
+<div class="row" style="justify-content:center;margin-bottom:5px">
+    <div class="col-6">
+        <EditForm Model="Request" OnValidSubmit="async () => await addKhoAsync()">
+            <RadzenCard>
+                <DataAnnotationsValidator />
+                <ValidationSummary />
+                <div class="radzen-row">
+                    <RadzenLabel class="radzen-lable" Text="Ten Kho" />
+                    <RadzenTextBox @bind-Value="Request.TenKho" Placeholder="Ten Kho" class="radzen-textbox" />
+                </div>
+                <div class="radzen-row">
+                    <RadzenLabel class="radzen-lable" Text="DiaChi" />
+                    <RadzenTextBox @bind-Value="Request.DiaChi" Placeholder="Dia Chi" class="radzen-textbox" />
+                </div>
+                <div class="radzen-row">
+                    <RadzenLabel class="radzen-lable" Text="SDT" />
+                    <RadzenTextBox @bind-Value="Request.SDT" Placeholder="SDT" class="radzen-textbox" />
+                </div>
+                <div class="radzen-row">
+                    <RadzenLabel class="radzen-lable" Text="Email" />
+                    <RadzenTextBox @bind-Value="Request.Email" Placeholder="Email" class="radzen-textbox" />
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-md-12 d-flex align-items-end justify-content-center" style="margin-top: 16px;">
+                        <RadzenButton ButtonType="Radzen.ButtonType.Submit" ButtonStyle="Radzen.ButtonStyle.Success" class="radzen-button" Icon="save" Text="Save" />
+                        <RadzenButton ButtonType="Radzen.ButtonType.Button" ButtonStyle="Radzen.ButtonStyle.Danger" class="radzen-button" Icon="delete" Text="Delete" />
+                    </div>
+                </div>
+            </RadzenCard>
+        </EditForm>
+    </div>
+</div>
+
+<RadzenGrid AllowFiltering="true" AllowPaging="true" PageSize="4" AllowSorting="true" Data="@listKhos" TItem="Kho" ColumnWidth="200px" AllowColumnResize="true">
+    <Columns>
+        <RadzenGridColumn TItem="Kho" Property="TenKho" Title="Ten Kho" />
+        <RadzenGridColumn TItem="Kho" Property="DiaChi" Title="Dia chi" />
+        <RadzenGridColumn TItem="Kho" Property="SDT" Title="Lien Lac" />
+        <RadzenGridColumn TItem="Kho" Property="Email" Title="Email" />
+    </Columns>
+</RadzenGrid>
+@code {
+    KhoRequest Request = new KhoRequest();
+    List<Kho> listKhos = new List<Kho>();
+
+    async Task addKhoAsync()
+    {
+        var result = await productService.AddKho(Request);
+        if (result.IsSuccess)
+        {
+            ShowNotification( new NotificationMessage(){ Severity = NotificationSeverity.Success, Summary = "Them Thanh Cong", Duration = 4000 });
+            Request = new KhoRequest();
+            await OnInitializedAsync();
+        }
+        else
+        {
+            ShowNotification(new NotificationMessage() { Severity = NotificationSeverity.Error, Summary = "Them Khong Thanh Cong", Duration = 4000 });
+        }
+    }
+    async Task GetKhosAsync()
+    {
+        var result = await productService.GetKhos();
+        if (result.IsSuccess)
+        {
+            listKhos = result.Khos;
+        }
+    }
+
+    protected override async Task OnInitializedAsync()
+    {
+        await GetKhosAsync();
+    }
+    //Show thong bao
+    void ShowNotification(NotificationMessage message)
+    {
+        notificationService.Notify(message);
+    }
+}

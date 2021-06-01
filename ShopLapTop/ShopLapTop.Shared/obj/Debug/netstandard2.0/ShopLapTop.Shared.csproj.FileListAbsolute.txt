@@ -1,9 +1,0 @@
-D:\DoAn\ShopLaptop\ShopLapTop\ShopLapTop.Shared\bin\Debug\netstandard2.0\ShopLapTop.Shared.deps.json
-D:\DoAn\ShopLaptop\ShopLapTop\ShopLapTop.Shared\bin\Debug\netstandard2.0\ShopLapTop.Shared.dll
-D:\DoAn\ShopLaptop\ShopLapTop\ShopLapTop.Shared\bin\Debug\netstandard2.0\ShopLapTop.Shared.pdb
-D:\DoAn\ShopLaptop\ShopLapTop\ShopLapTop.Shared\obj\Debug\netstandard2.0\ShopLapTop.Shared.csprojAssemblyReference.cache
-D:\DoAn\ShopLaptop\ShopLapTop\ShopLapTop.Shared\obj\Debug\netstandard2.0\ShopLapTop.Shared.AssemblyInfoInputs.cache
-D:\DoAn\ShopLaptop\ShopLapTop\ShopLapTop.Shared\obj\Debug\netstandard2.0\ShopLapTop.Shared.AssemblyInfo.cs
-D:\DoAn\ShopLaptop\ShopLapTop\ShopLapTop.Shared\obj\Debug\netstandard2.0\ShopLapTop.Shared.csproj.CoreCompileInputs.cache
-D:\DoAn\ShopLaptop\ShopLapTop\ShopLapTop.Shared\obj\Debug\netstandard2.0\ShopLapTop.Shared.dll
-D:\DoAn\ShopLaptop\ShopLapTop\ShopLapTop.Shared\obj\Debug\netstandard2.0\ShopLapTop.Shared.pdb

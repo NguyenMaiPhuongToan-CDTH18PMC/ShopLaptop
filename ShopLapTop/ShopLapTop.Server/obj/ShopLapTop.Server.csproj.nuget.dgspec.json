@@ -1,21 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Github\\ShopLaptop\\ShopLapTop\\ShopLapTop.Server\\ShopLapTop.Server.csproj": {}
+    "D:\\DoAn\\ShopLaptop\\ShopLapTop\\ShopLapTop.Server\\ShopLapTop.Server.csproj": {}
   },
   "projects": {
-    "E:\\Github\\ShopLaptop\\ShopLapTop\\ShopLapTop.Server\\ShopLapTop.Server.csproj": {
+    "D:\\DoAn\\ShopLaptop\\ShopLapTop\\ShopLapTop.Server\\ShopLapTop.Server.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Github\\ShopLaptop\\ShopLapTop\\ShopLapTop.Server\\ShopLapTop.Server.csproj",
+        "projectUniqueName": "D:\\DoAn\\ShopLaptop\\ShopLapTop\\ShopLapTop.Server\\ShopLapTop.Server.csproj",
         "projectName": "ShopLapTop.Server",
-        "projectPath": "E:\\Github\\ShopLaptop\\ShopLapTop\\ShopLapTop.Server\\ShopLapTop.Server.csproj",
-        "packagesPath": "C:\\Users\\ACER\\.nuget\\packages\\",
-        "outputPath": "E:\\Github\\ShopLaptop\\ShopLapTop\\ShopLapTop.Server\\obj\\",
+        "projectPath": "D:\\DoAn\\ShopLaptop\\ShopLapTop\\ShopLapTop.Server\\ShopLapTop.Server.csproj",
+        "packagesPath": "C:\\Users\\Kou\\.nuget\\packages\\",
+        "outputPath": "D:\\DoAn\\ShopLaptop\\ShopLapTop\\ShopLapTop.Server\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
+        ],
         "configFilePaths": [
-          "C:\\Users\\ACER\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\Kou\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netstandard2.1"
@@ -26,8 +30,11 @@
         },
         "frameworks": {
           "netstandard2.1": {
-            "targetAlias": "netstandard2.1",
-            "projectReferences": {}
+            "projectReferences": {
+              "D:\\DoAn\\ShopLaptop\\ShopLapTop\\ShopLapTop.Shared\\ShopLapTop.Shared.csproj": {
+                "projectPath": "D:\\DoAn\\ShopLaptop\\ShopLapTop\\ShopLapTop.Shared\\ShopLapTop.Shared.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -38,7 +45,6 @@
       },
       "frameworks": {
         "netstandard2.1": {
-          "targetAlias": "netstandard2.1",
           "dependencies": {
             "Blazored.LocalStorage": {
               "target": "Package",
@@ -86,7 +92,74 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.203\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\DoAn\\ShopLaptop\\ShopLapTop\\ShopLapTop.Shared\\ShopLapTop.Shared.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\DoAn\\ShopLaptop\\ShopLapTop\\ShopLapTop.Shared\\ShopLapTop.Shared.csproj",
+        "projectName": "ShopLapTop.Shared",
+        "projectPath": "D:\\DoAn\\ShopLaptop\\ShopLapTop\\ShopLapTop.Shared\\ShopLapTop.Shared.csproj",
+        "packagesPath": "C:\\Users\\Kou\\.nuget\\packages\\",
+        "outputPath": "D:\\DoAn\\ShopLaptop\\ShopLapTop\\ShopLapTop.Shared\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Kou\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "dependencies": {
+            "AKSoftware.WebApi": {
+              "target": "Package",
+              "version": "[3.0.1, )"
+            },
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            },
+            "System.ComponentModel.Annotations": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
         }
       }
     }

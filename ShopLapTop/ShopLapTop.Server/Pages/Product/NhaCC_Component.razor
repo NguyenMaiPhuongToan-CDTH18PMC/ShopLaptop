@@ -1,0 +1,85 @@
+﻿@page "/Product/NhaCungCap"
+@inject ProductService productService
+@inject NavigationManager navigationManager
+@inject NotificationService notificationService
+
+<h3>Them Nha Cung Cap</h3>
+<div class="row" style="justify-content:center;margin-bottom:5px">
+    <div class="col-6">
+        <EditForm Model="Request" OnValidSubmit="async () => await addNCCAsync()">
+            <RadzenCard>
+                <DataAnnotationsValidator />
+                <ValidationSummary />
+                <div class="radzen-row">
+                    <RadzenLabel class="radzen-lable" Text="Nha Cung Cap" />
+                    <RadzenTextBox @bind-Value="Request.TenNCC" Placeholder="Ten Nha Cung Cap" class="radzen-textbox" />
+                </div>
+                <div class="radzen-row">
+                    <RadzenLabel class="radzen-lable" Text="DiaChi" />
+                    <RadzenTextBox @bind-Value="Request.DiaChi" Placeholder="Dia Chi" class="radzen-textbox" />
+                </div>
+                <div class="radzen-row">
+                    <RadzenLabel class="radzen-lable" Text="SDT" />
+                    <RadzenTextBox @bind-Value="Request.SDT" Placeholder="SDT" class="radzen-textbox" />
+                </div>
+                <div class="radzen-row">
+                    <RadzenLabel class="radzen-lable" Text="Email" />
+                    <RadzenTextBox @bind-Value="Request.Email" Placeholder="Email" class="radzen-textbox" />
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-md-12 d-flex align-items-end justify-content-center" style="margin-top: 16px;">
+                        <RadzenButton ButtonType="Radzen.ButtonType.Submit" ButtonStyle="Radzen.ButtonStyle.Success" class="radzen-button" Icon="save" Text="Save" />
+                        <RadzenButton ButtonType="Radzen.ButtonType.Button" ButtonStyle="Radzen.ButtonStyle.Danger" class="radzen-button" Icon="delete" Text="Delete" />
+                    </div>
+                </div>
+            </RadzenCard>
+        </EditForm>
+    </div>
+</div>
+
+<RadzenGrid AllowFiltering="true" AllowPaging="true" PageSize="4" AllowSorting="true" Data="@listNhaCCs" TItem="NhaCungCap" ColumnWidth="200px" AllowColumnResize="true">
+    <Columns>
+        <RadzenGridColumn TItem="NhaCungCap" Property="TenNCC" Title="Nha Cung Cap" />
+        <RadzenGridColumn TItem="NhaCungCap" Property="DiaChi" Title="Dia chi" />
+        <RadzenGridColumn TItem="NhaCungCap" Property="SDT" Title="Lien Lac" />
+        <RadzenGridColumn TItem="NhaCungCap" Property="Email" Title="Email" />
+    </Columns>
+</RadzenGrid>
+@code {
+    NhaCCRequest Request = new NhaCCRequest();
+    List<NhaCungCap> listNhaCCs = new List<NhaCungCap>();
+
+    async Task addNCCAsync()
+    {
+        var result = await productService.AddNhaCC(Request);
+        if (result.IsSuccess)
+        {
+            ShowNotification(new NotificationMessage() { Severity = NotificationSeverity.Success, Summary = "Them Thanh Cong", Duration = 4000 });
+            Request = new NhaCCRequest();
+            await OnInitializedAsync();
+        }
+        else
+        {
+            ShowNotification(new NotificationMessage() { Severity = NotificationSeverity.Error, Summary = "Them Khong Thanh Cong", Duration = 4000 });
+        }
+    }
+    async Task GetNhaCCsAsync()
+    {
+        var result = await productService.GetNhaCC();
+        if (result.IsSuccess)
+        {
+            listNhaCCs = result.NhaCungCaps;
+        }
+    }
+
+    protected override async Task OnInitializedAsync()
+    {
+        await GetNhaCCsAsync();
+    }
+
+    //Show Thong Bao
+    void ShowNotification(NotificationMessage message)
+    {
+        notificationService.Notify(message);
+    }
+}

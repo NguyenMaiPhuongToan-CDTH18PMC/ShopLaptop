@@ -1,0 +1,97 @@
+﻿@page "/Product/ChiNhanh"
+@inject ProductService productService
+@inject NavigationManager navigationManager
+@inject NotificationService notificationService
+
+<h3>Them Kho</h3>
+<div class="row" style="justify-content:center;margin-bottom:5px">
+    <div class="col-6">
+        <EditForm Model="Request" OnValidSubmit="async () => await addChiNhanhAsync()">
+            <RadzenCard>
+                <DataAnnotationsValidator />
+                <ValidationSummary />
+                <div class="radzen-row">
+                    <RadzenLabel class="radzen-lable" Text="Ten Kho" />
+                    <RadzenTextBox @bind-Value="Request.TenCN" Placeholder="Ten Kho" class="radzen-textbox" />
+                </div>
+                <div class="radzen-row">
+                    <RadzenLabel class="radzen-lable" Text="DiaChi" />
+                    <RadzenTextBox @bind-Value="Request.DiaChi" Placeholder="Dia Chi" class="radzen-textbox" />
+                </div>
+                <div>
+                    <RadzenLabel class="radzen-lable" Text="Kho Hang" />
+                    <RadzenDropDownDataGrid TValue="string" FilterCaseSensitivity="FilterCaseSensitivity.CaseInsensitive" AllowFiltering="true" AllowClear="true"
+                                            Data=@listKhos TextProperty="TenKho" ValueProperty="MaKho" @bind-Value="@Request.MaKho"/>
+                </div>
+                <div class="radzen-row">
+                    <RadzenLabel class="radzen-lable" Text="SDT" />
+                    <RadzenTextBox @bind-Value="Request.SDT" Placeholder="SDT" class="radzen-textbox" />
+                </div>
+                <div class="radzen-row">
+                    <RadzenLabel class="radzen-lable" Text="Email" />
+                    <RadzenTextBox @bind-Value="Request.Email" Placeholder="Email" class="radzen-textbox" />
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-md-12 d-flex align-items-end justify-content-center" style="margin-top: 16px;">
+                        <RadzenButton ButtonType="Radzen.ButtonType.Submit" ButtonStyle="Radzen.ButtonStyle.Success" class="radzen-button" Icon="save" Text="Save" />
+                        <RadzenButton ButtonType="Radzen.ButtonType.Button" ButtonStyle="Radzen.ButtonStyle.Danger" class="radzen-button" Icon="delete" Text="Delete" />
+                    </div>
+                </div>
+            </RadzenCard>
+        </EditForm>
+    </div>
+</div>
+
+<RadzenGrid AllowFiltering="true" AllowPaging="true" PageSize="4" AllowSorting="true" Data="@listChiNhanhs" TItem="ChiNhanh" ColumnWidth="200px" AllowColumnResize="true">
+    <Columns>
+        <RadzenGridColumn TItem="ChiNhanh" Property="TenCN" Title="Ten Kho" />
+        <RadzenGridColumn TItem="ChiNhanh" Property="DiaChi" Title="Dia chi" />
+        <RadzenGridColumn TItem="ChiNhanh" Property="SDT" Title="Lien Lac" />
+        <RadzenGridColumn TItem="ChiNhanh" Property="Email" Title="Email" />
+    </Columns>
+</RadzenGrid>
+@code {
+    ChiNhanhRequest Request = new ChiNhanhRequest();
+    List<ChiNhanh> listChiNhanhs = new List<ChiNhanh>();
+    List<Kho> listKhos = new List<Kho>();
+
+    async Task addChiNhanhAsync()
+    {
+        var result = await productService.AddChiNhanh(Request);
+        if (result.IsSuccess)
+        {
+            ShowNotification(new NotificationMessage() { Severity = NotificationSeverity.Success, Summary = "Them Thanh Cong", Duration = 4000 });
+            Request = new ChiNhanhRequest();
+            await OnInitializedAsync();
+        }
+        else
+        {
+            ShowNotification(new NotificationMessage() { Severity = NotificationSeverity.Error, Summary = "Them Thanh Cong", Duration = 4000 });
+        }
+    }
+    async Task GetChiNhanhAsync()
+    {
+        var result1 = await productService.GetChiNhanhs();
+        if (result1.IsSuccess)
+        {
+            listChiNhanhs = result1.ChiNhanhs;
+        }
+
+        var result2 = await productService.GetKhos();
+        if (result2.IsSuccess)
+        {
+            listKhos = result2.Khos;
+        }
+    }
+
+    //Show THong Bao
+    void ShowNotification(NotificationMessage message)
+    {
+        notificationService.Notify(message);
+    }
+
+    protected override async Task OnInitializedAsync()
+    {
+        await GetChiNhanhAsync();
+    }
+}

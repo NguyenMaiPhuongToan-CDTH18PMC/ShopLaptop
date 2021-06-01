@@ -1,0 +1,90 @@
+﻿@page "/Product/KhuyenMai"
+@inject ProductService productService
+@inject NavigationManager navigationManager
+@inject NotificationService notificationService
+
+<h3>Them Nha Cung Cap</h3>
+<div class="row" style="justify-content:center;margin-bottom:5px">
+    <div class="col-6">
+        <EditForm Model="Request" OnValidSubmit="async () => await addKhuyenMaiAsync()">
+            <RadzenCard>
+                <DataAnnotationsValidator />
+                <ValidationSummary />
+                <div class="radzen-row">
+                    <RadzenLabel class="radzen-lable" Text="Ten Khuyen Mai" />
+                    <RadzenTextBox @bind-Value="Request.TenKM" Placeholder="Ten Nha Cung Cap" class="radzen-textbox" />
+                </div>
+                <div class="radzen-row">
+                    <RadzenLabel class="radzen-lable" Text="Loai Khuyen Mai" />
+                    <RadzenNumeric @bind-Value="Request.LoaiKM" Placeholder="Dia Chi" class="radzen-textbox" />
+                </div>
+                <div class="radzen-row">
+                    <RadzenLabel class="radzen-lable" Text="Mo Ta" />
+                    <RadzenTextArea @bind-Value="Request.MoTa" class="radzen-textarea" />
+                </div>
+                <div class="radzen-row">
+                    <RadzenLabel class="radzen-lable" Text="Ngay Bat Dau" />
+                    <RadzenDatePicker @bind-Value="Request.NgayBD" DateFormat="d" />
+                </div>
+                <div class="radzen-row">
+                    <RadzenLabel class="radzen-lable" Text="Ngay Ket Thuc" />
+                    <RadzenDatePicker @bind-Value="Request.NgayKT" DateFormat="d" />
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-md-12 d-flex align-items-end justify-content-center" style="margin-top: 16px;">
+                        <RadzenButton ButtonType="Radzen.ButtonType.Submit" ButtonStyle="Radzen.ButtonStyle.Success" class="radzen-button" Icon="save" Text="Save" />
+                        <RadzenButton ButtonType="Radzen.ButtonType.Button" ButtonStyle="Radzen.ButtonStyle.Danger" class="radzen-button" Icon="delete" Text="Delete" />
+                    </div>
+                </div>
+            </RadzenCard>
+        </EditForm>
+    </div>
+</div>
+
+<RadzenGrid AllowFiltering="true" AllowPaging="true" PageSize="4" AllowSorting="true" Data="@listKhuyenMais" TItem="KhuyenMai" ColumnWidth="200px" AllowColumnResize="true">
+    <Columns>
+        <RadzenGridColumn TItem="KhuyenMai" Property="TenKM" Title="Ten Khuyen Mai" />
+        <RadzenGridColumn TItem="KhuyenMai" Property="LoaiKM" Title="Phan Tram Khuyen Mai" />
+        <RadzenGridColumn TItem="KhuyenMai" Property="NgayBD" Title="Ngay Bat Dau" />
+        <RadzenGridColumn TItem="KhuyenMai" Property="NgayKT" Title="Ngay Ket Thuc" />
+    </Columns>
+</RadzenGrid>
+@code {
+    KhuyenMaiRequest Request = new KhuyenMaiRequest();
+    List<KhuyenMai> listKhuyenMais = new List<KhuyenMai>();
+
+    async Task addKhuyenMaiAsync()
+    {
+        var result = await productService.AddKhuyenMai(Request);
+        if (result.IsSuccess)
+        {
+            ShowNotification(new NotificationMessage() { Severity = NotificationSeverity.Success, Summary = "Them Thanh Cong", Duration = 4000 });
+            Request = new KhuyenMaiRequest();
+            await OnInitializedAsync();
+        }
+        else
+        {
+            ShowNotification(new NotificationMessage() { Severity = NotificationSeverity.Error, Summary = "Them Khong Thanh Cong", Duration = 4000 });
+        }
+    }
+    async Task GetKhuyenMaisAsync()
+    {
+        var result = await productService.GetKhuyenMais();
+        if (result.IsSuccess)
+        {
+            listKhuyenMais = result.KhuyenMais;
+        }
+    }
+
+
+    protected override async Task OnInitializedAsync()
+    {
+        await GetKhuyenMaisAsync();
+    }
+
+    //Show Thong Bao
+    void ShowNotification(NotificationMessage message)
+    {
+        notificationService.Notify(message);
+    }
+}
