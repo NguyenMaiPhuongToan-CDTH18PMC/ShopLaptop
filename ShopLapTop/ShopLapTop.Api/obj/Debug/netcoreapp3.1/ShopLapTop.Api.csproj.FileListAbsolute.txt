@@ -37,3 +37,4 @@ E:\Github\ShopLaptop\ShopLapTop\ShopLapTop.Api\obj\Debug\netcoreapp3.1\ShopLapTo
 E:\Github\ShopLaptop\ShopLapTop\ShopLapTop.Api\obj\Debug\netcoreapp3.1\ShopLapTop.Api.dll
 E:\Github\ShopLaptop\ShopLapTop\ShopLapTop.Api\obj\Debug\netcoreapp3.1\ShopLapTop.Api.pdb
 E:\Github\ShopLaptop\ShopLapTop\ShopLapTop.Api\obj\Debug\netcoreapp3.1\ShopLapTop.Api.genruntimeconfig.cache
+E:\Github\ShopLaptop\ShopLapTop\ShopLapTop.Api\obj\Debug\netcoreapp3.1\ShopLapTop.Api.csprojAssemblyReference.cache

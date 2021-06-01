@@ -8,7 +8,6 @@ E:\Github\ShopLaptop\ShopLapTop\ShopLaptop.Client\bin\Debug\netcoreapp3.1\ShopLa
 E:\Github\ShopLaptop\ShopLapTop\ShopLaptop.Client\bin\Debug\netcoreapp3.1\ShopLaptop.Client.pdb
 E:\Github\ShopLaptop\ShopLapTop\ShopLaptop.Client\bin\Debug\netcoreapp3.1\ShopLaptop.Client.Views.dll
 E:\Github\ShopLaptop\ShopLapTop\ShopLaptop.Client\bin\Debug\netcoreapp3.1\ShopLaptop.Client.Views.pdb
-E:\Github\ShopLaptop\ShopLapTop\ShopLaptop.Client\obj\Debug\netcoreapp3.1\ShopLaptop.Client.csprojAssemblyReference.cache
 E:\Github\ShopLaptop\ShopLapTop\ShopLaptop.Client\obj\Debug\netcoreapp3.1\ShopLaptop.Client.AssemblyInfoInputs.cache
 E:\Github\ShopLaptop\ShopLapTop\ShopLaptop.Client\obj\Debug\netcoreapp3.1\ShopLaptop.Client.AssemblyInfo.cs
 E:\Github\ShopLaptop\ShopLapTop\ShopLaptop.Client\obj\Debug\netcoreapp3.1\ShopLaptop.Client.csproj.CoreCompileInputs.cache
