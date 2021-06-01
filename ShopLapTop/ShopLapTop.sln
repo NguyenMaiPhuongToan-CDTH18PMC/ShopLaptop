@@ -9,7 +9,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShopLapTop.Shared", "ShopLa
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShopLapTop.Server", "ShopLapTop.Server\ShopLapTop.Server.csproj", "{2181ABBE-A041-4633-A583-C3BBBEEF385E}"
 EndProject
+<<<<<<< HEAD
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Client", "Client\Client.csproj", "{F15FB841-87C2-4643-B71F-3F4B3C72539F}"
+=======
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShopLaptop.Client", "ShopLaptop.Client\ShopLaptop.Client.csproj", "{F8484190-9E94-4CA7-B8C5-55895F47D2AF}"
+>>>>>>> main
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
