@@ -2,38 +2,53 @@
     ViewData["Title"] = "Home";
 }
 
-
-
-<div class="mainmenu-area">
+<div class="site-branding-area">
     <div class="container">
         <div class="row">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
+            <div class="col-sm-6">
+                @*<div class="logo">
+                        <h1><a asp-area="" asp-controller="Home" asp-action="Index"><img src="~/img/logo.png"></a>Trang chủ</h1>
+                    </div>*@
             </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li class="active"><a asp-area="" asp-controller="Home" asp-action="Index">Trang chủ</a></li>
-                    <li><a asp-area="" asp-controller="Home" asp-action="Detail">Chi tiết sản phẩm</a></li>
-                    <li><a asp-area="" asp-controller="Home" asp-action="Cart">Giỏ hàng</a></li>
-                    <li><a asp-area="" asp-controller="Home" asp-action="Checkout">Thanh toán</a></li>
-                    <li><a asp-area="" asp-controller="Home" asp-action="Login">Đăng nhập</a></li>
-                    <li><a asp-area="" asp-controller="Home" asp-action="Contact">Liên hệ</a></li>
-                    <li>
-                      <input type="text" name="search" style="padding:20px" placeholder="Tỉm sản phẩm..." />
-                    </li>
-                    <li>
-                        <a href="#"><i class="fa fa-search"></i></a>
-                    </li>
-                </ul>
+
+            <div class="col-sm-6">
+                @*<div class="shopping-item">
+                        <a asp-area="" asp-controller="Home" asp-action="Cart">Giỏ hàng - <span class="cart-amunt">$10000</span> <i class="fa fa-shopping-cart"></i> <span class="product-count">5</span></a>
+                    </div>*@
             </div>
         </div>
     </div>
-</div> <!-- End mainmenu area -->
+</div> <!-- End site branding area -->
+@*<div class="mainmenu-area">
+        <div class="container">
+            <div class="row">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a asp-area="" asp-controller="Home" asp-action="Index">Trang chủ</a></li>
+                        <li><a asp-area="" asp-controller="Home" asp-action="Detail">Chi tiết sản phẩm</a></li>
+                        <li><a asp-area="" asp-controller="Home" asp-action="Cart">Giỏ hàng</a></li>
+                        <li><a asp-area="" asp-controller="Home" asp-action="Checkout">Thanh toán</a></li>
+                        <li><a asp-area="" asp-controller="Home" asp-action="Login">Đăng nhập</a></li>
+                        <li><a asp-area="" asp-controller="Home" asp-action="Contact">Liên hệ</a></li>
+                        <li>
+                          <input type="text" name="search" style="padding:20px" placeholder="Tỉm sản phẩm..." />
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-search"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>*@ <!-- End mainmenu area -->
 
 <div class="slider-area">
     <!-- Slider -->
@@ -90,8 +105,8 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="latest-product">
-                    <h2 class="section-title">Sản phẩm thịnh hành</h2>
-                   
+                    <div class="section-title-1"></div>
+
                     <div class="product-carousel">
                         <div class="single-product">
                             <div class="product-f-image">
@@ -194,7 +209,7 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="latest-product">
-                    <h2 class="section-title">Sản phẩm mới</h2>
+                    <div class="section-title-2"></div>
                     <div class="product-carousel">
                         <div class="single-product">
                             <div class="product-f-image">
@@ -443,10 +458,11 @@
         </div>
     </div>*@ <!-- End product widget area -->
 
-<h2 class="section-title">Các hãng laptop thịnh hành</h2>
+
 <div class="brands-area">
     <div class="zigzag-bottom"></div>
     <div class="container">
+        <div class="section-title-3"></div>
         <div class="row">
             <div class="col-md-12">
                 <div class="brand-wrapper">
@@ -464,4 +480,4 @@
             </div>
         </div>
     </div>
-</div> <!-- End brands area -->
+</div>
