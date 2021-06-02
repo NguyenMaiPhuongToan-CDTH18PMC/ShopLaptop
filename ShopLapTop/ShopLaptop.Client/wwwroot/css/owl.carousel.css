@@ -88,6 +88,7 @@ background-color:whitesmoke;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  background-color:darkred;
 }
 .owl-carousel.owl-loaded {
   display: block;

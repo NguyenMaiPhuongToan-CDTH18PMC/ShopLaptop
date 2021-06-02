@@ -40,3 +40,4 @@ E:\Github\ShopLaptop\ShopLapTop\ShopLaptop.Client\obj\Debug\netcoreapp3.1\ShopLa
 E:\Github\ShopLaptop\ShopLapTop\ShopLaptop.Client\obj\Debug\netcoreapp3.1\ShopLaptop.Client.pdb
 E:\Github\ShopLaptop\ShopLapTop\ShopLaptop.Client\obj\Debug\netcoreapp3.1\ShopLaptop.Client.genruntimeconfig.cache
 E:\Github\ShopLaptop\ShopLapTop\ShopLaptop.Client\obj\Debug\netcoreapp3.1\ShopLaptop.Client.csproj.CopyComplete
+E:\Github\ShopLaptop\ShopLapTop\ShopLaptop.Client\obj\Debug\netcoreapp3.1\ShopLaptop.Client.csprojAssemblyReference.cache

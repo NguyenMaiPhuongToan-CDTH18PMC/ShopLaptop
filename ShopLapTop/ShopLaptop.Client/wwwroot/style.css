@@ -28,7 +28,13 @@ h6 {
 }
 body { font-family:Arial, Helvetica, sans-serif; }
 
-
+.site-branding-area {
+    background-image: url(https://storage.googleapis.com/teko-gae.appspot.com/media/image/2021/5/26/20210526_8e289970-8b96-4c3d-8a97-f0ae6a44654e.png);
+    background-position: center center;
+    background-size: cover;
+    height: 472px;
+    width:100%;
+}
 
 .header-area {
     background: none repeat scroll 0 0 #f4f4f4;
@@ -151,7 +157,7 @@ z-index: 999;}
 .mainmenu-area ul.navbar-nav li:hover a, .mainmenu-area ul.navbar-nav li.active a {background: #5a88ca; color:#FFF;}
 .mainmenu-area .nav > li > a:focus {color: #FFF;}
 
-.slider-area { width:100%; position:relative; margin:0 auto; padding:5px;}
+.slider-area { width:80%; position:relative; margin:0 auto; padding:5px;}
 /*-------------------------
 [9. Block slider]
 ---------------------------*/
@@ -169,6 +175,7 @@ z-index: 999;}
 }
 .block-slider .bx-prev,
 .block-slider .bx-next{
+
 	width: 32px;
 	height: 32px;
 	border: 1px solid #eaeaea;
@@ -337,6 +344,7 @@ z-index: 999;}
 .button-radius:hover{
   padding-left: 20px;
   padding-right: 40px;
+  color:red;
 }
 
 .promo-area {
@@ -368,14 +376,42 @@ z-index: 999;}
 .promo2 { background:#ffd900;}
 .promo3 { background:#fa8072;}
 .promo4 { background:#4abebd;}
-.section-title {
-  font-family: "Raleway",sans-serif;
+.section-title-1 {
+    /*  font-family: "Raleway",sans-serif;
   font-size: 50px;
   font-weight: 100;
   margin-bottom: 50px;
-  text-align: center;
+  text-align: center;*/
+    background-image: url(https://storage.googleapis.com/teko-gae.appspot.com/media/image/2021/5/26/20210526_dc386de9-79d7-4671-9d3d-b83d9e6733a2.png);
+    background-position: center center;
+    background-size: cover;
+    height: 177px;
+    width: auto;
 }
-
+.section-title-2 {
+    /*  font-family: "Raleway",sans-serif;
+  font-size: 50px;
+  font-weight: 100;
+  margin-bottom: 50px;
+  text-align: center;*/
+    background-image: url(https://storage.googleapis.com/teko-gae.appspot.com/media/image/2021/5/26/20210526_6ab13581-496a-4130-8312-d863d345a6d6.png);
+    background-position: center center;
+    background-size: cover;
+    height: 177px;
+    width: auto;
+}
+.section-title-3 {
+    /*  font-family: "Raleway",sans-serif;
+  font-size: 50px;
+  font-weight: 100;
+  margin-bottom: 50px;
+  text-align: center;*/
+    background-image: url(https://storage.googleapis.com/teko-gae.appspot.com/media/image/2021/5/26/20210526_dc386de9-79d7-4671-9d3d-b83d9e6733a2.png);
+    background-position: center center;
+    background-size: cover;
+    height: 177px;
+    width: auto;
+}
 
 .product-f-image {
     position: relative;
@@ -623,13 +659,14 @@ padding: 35px 0 180px;}
 .newsletter-form {
     margin-top: 25px;
 }
-a {color: #5a88ca}
-a:hover, a:focus {color: red}
+a {color: lightblue}
+a:hover, a:focus {color: white}
 .footer-bottom-area {
   background: none repeat scroll 0 0 #000;
   color: #fff;
   padding-bottom: 40px;
 }
+
 
 
 .slide-bulletz {
@@ -801,7 +838,7 @@ input[type="submit"]:hover, button[type=submit]:hover {background-color: #222}
     margin-bottom: 25px;
 }
 .product-inner-price > ins {
-    color: #5a88ca;
+    color: yellow;
     font-weight: 700;
     margin-right: 10px;
     text-decoration: none;
