@@ -4,6 +4,20 @@
     float: left;
     margin-right: 15px;
 }
+.pagebtn{
+    background-color:white;
+    color:black;
+}
+.pagebtn a{
+    color:black;
+}
+.pagebtn a:hover {
+        color: red;
+}
+.choose {
+    color: red;
+    text-decoration: underline;
+}
 .alignright {
     float: right;
     margin-left: 15px;
@@ -1058,8 +1072,11 @@ div.cart-collaterals ul.products li.product .price ins {
     margin-bottom: 20px;
     padding: 15px;
 }
-woocommerce-info a:hover{
-    color:red;
+.showlogin, .showcoupon, .showlogin collapsed,.showcoupon collapsed {
+    color: blue;
+}
+.showlogin:hover, .showcoupon:hover {
+    color: red;
 }
 .col2-set {
     margin-left: -30px;
